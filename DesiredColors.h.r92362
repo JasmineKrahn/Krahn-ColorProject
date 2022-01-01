@@ -1,0 +1,26 @@
+#pragma once
+#include <iostream>
+#include "LinkedList.h"
+#include "Colors.h"
+
+//@author Jasmine Krahn
+// holds all colors user input that they own in a linked list
+class DesiredColors
+{
+	LinkedList desiredColors;
+
+	void adddesired(Colors color)
+	{
+		desiredColors.addNode(color);
+	}
+
+	void deletedesired(Colors color)
+	{
+		desiredColors.delNode(color);
+	}
+
+	void printdesired()
+	{
+		desiredColors.PrintList();
+	}
+};

@@ -1,0 +1,27 @@
+#pragma once
+#include <iostream>
+#include "LinkedList.h"
+#include "Colors.h"
+
+//@author Jasmine Krahn
+// holds all colors user input that they own in a linked list
+class OwnedColors
+{
+public:
+	LinkedList ownedColors;
+
+	void addOwned(Colors color)
+	{
+		ownedColors.addNode(color);
+	}
+
+	void deleteOwned(Colors color)
+	{
+		ownedColors.delNode(color);
+	}
+
+	void printOwned()
+	{
+		ownedColors.PrintList();
+	}
+};
